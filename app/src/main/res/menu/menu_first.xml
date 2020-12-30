@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuSetting"
+        android:title="設定地圖參數"
+        android:icon="@android:drawable/ic_dialog_info" />
+    <item android:id="@+id/menuReset"
+        android:title="重置所有設定及紀錄"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+    <item android:id="@+id/menuItemAbout"
+        android:title="關於本程式"
+        android:icon="@android:drawable/ic_dialog_info" />
+    <item android:id="@+id/menuItemExit"
+        android:title="結束"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+</menu>

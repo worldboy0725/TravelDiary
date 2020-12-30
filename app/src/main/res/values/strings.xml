@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">行腳輕旅行</string>
+    <string name="title_activity_maps">行腳輕旅行</string>
+    <string name="btn_3d_map">3D地圖</string>
+    <string-array name="spn_map_type_list">
+        <item>一般街道圖</item>
+        <item>衛星影像地圖</item>
+        <item>地形圖</item>
+        <item>混合地圖</item>
+    </string-array>
+    <string-array name="mLocations">
+        <item>台北車站</item>
+        <item>松山車站</item>
+        <item>基隆車站</item>
+        <item>七堵車站</item>
+        <item>板橋車站</item>
+        <item>瑞芳車站</item>
+        <item>桃園車站</item>
+        <item>新竹車站</item>
+        <item>苗栗車站</item>
+        <item>台中車站</item>
+        <item>彰化車站</item>
+        <item>嘉義車站</item>
+        <item>斗六車站</item>
+        <item>台南車站</item>
+        <item>高雄車站</item>
+        <item>屏東車站</item>
+        <item>台東車站</item>
+        <item>花蓮車站</item>
+        <item>宜蘭車站</item>
+    </string-array>
+
+</resources>

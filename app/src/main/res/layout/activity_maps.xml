@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="定位位置" />
+
+            <Button
+                android:id="@+id/btnAddMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="加入地標" />
+
+            <Button
+                android:id="@+id/btnShowRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="顯示路徑" />
+
+            <Button
+                android:id="@+id/btnEditMkr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的紀錄" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView android:id="@+id/txtShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#0000FF"
+                android:textSize="11sp"
+                android:text="地圖顯示:" />
+
+            <Spinner
+                android:id="@+id/spnMapType"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:layout_gravity="center"
+                android:entries="@array/spn_map_type_list"
+                android:gravity="center" />
+
+            <TextView android:id="@+id/txtMapType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#0000FF"
+                android:textSize="12sp"
+                android:text="車站點:" />
+
+            <Spinner
+                android:id="@+id/spnLocation"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:layout_gravity="center"
+                android:entries="@array/mLocations"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="14sp" />
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/fragmentMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
